@@ -2,6 +2,16 @@
 
 ### Description
 
+This project was created by creating a Docker environment, then `docker exec -it` into the php container and running the following:
+
+```shell
+composer create-project --prefer-dist cakephp/cakephp:~2.10.24
+```
+
+Then move the files as needed.
+
+### Set Up Instructions
+
 This project is built using Docker. Ensure that Docker is set up before continuing. 
 
 ```shell
