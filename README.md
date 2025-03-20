@@ -22,10 +22,32 @@ docker compose up
 docker exec blank-cakephp-php-1 composer install
 # OR
 docker compose exec php composer install
+```
 
+### Setup DebugKit
+
+[Instructions](https://github.com/cakephp/debug_kit/tree/2.2?tab=readme-ov-file)
+
+Install
+
+```shell
 # in the app/Plugin directory
 git clone --single-branch --branch 2.2 git://github.com/cakephp/debug_kit.git DebugKit
 ```
+
+If git clone does not work
+
+- manual download [here](https://github.com/cakephp/debug_kit/zipball/2.2)
+- unzip the contents
+- rename directory `DebugKit`
+- move the directory to `app/Plugin`
+
+Setup
+
+- Add `app\Plugin` to `.gitignore`
+- create a directory inside `app/webroot` called `debug_kit`
+- copy the `css`, `js`, and `img` directories from `app/Plugin/DebugKit/webroot`
+- paste those directories into `app/webroot/debug_kit`
 
 You can view the project in the browser [localhost:8080](http://localhost:8080/)
 
