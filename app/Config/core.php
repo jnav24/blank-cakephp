@@ -34,7 +34,7 @@
  * In production mode, flash messages redirect after a time interval.
  * In development mode, you need to click the flash message to continue.
  */
-    $debug = empty($_ENV['APP_ENV']) ? 2 : $_ENV['APP_ENV'] === 'local' ? 1 : 0;
+    $debug = empty($_ENV['APP_ENV']) ? 2 : ($_ENV['APP_ENV'] === 'local' ? 1 : 0);
 	Configure::write('debug', $debug);
 
 /**

@@ -51,6 +51,16 @@ Setup
 
 You can view the project in the browser [localhost:8080](http://localhost:8080/)
 
+### Cake CLI
+
+To run cake commands
+
+```shell
+ docker exec blank-cakephp-php-1 app/Console/cake bake
+```
+
+### Extras
+
 [![Latest Stable Version](https://poser.pugx.org/cakephp/cakephp/v/stable.svg)](https://packagist.org/packages/cakephp/cakephp)
 [![License](https://poser.pugx.org/cakephp/cakephp/license.svg)](https://packagist.org/packages/cakephp/cakephp)
 [![Bake Status](https://secure.travis-ci.org/cakephp/cakephp.png?branch=master)](https://travis-ci.org/cakephp/cakephp)

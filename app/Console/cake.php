@@ -17,6 +17,11 @@
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
 
+require __DIR__ . '/../../vendors/autoload.php';
+
+$dotenv = \Dotenv\Dotenv::createImmutable(__DIR__ . '/../../');
+$dotenv->load();
+
 if (!defined('DS')) {
 	define('DS', DIRECTORY_SEPARATOR);
 }
