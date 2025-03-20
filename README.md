@@ -22,6 +22,9 @@ docker compose up
 docker exec blank-cakephp-php-1 composer install
 # OR
 docker compose exec php composer install
+
+# in the app/Plugin directory
+git clone --single-branch --branch 2.2 git://github.com/cakephp/debug_kit.git DebugKit
 ```
 
 You can view the project in the browser [localhost:8080](http://localhost:8080/)

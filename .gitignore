@@ -2,6 +2,7 @@
 /public/hot
 /public/storage
 /storage
+/app/Plugin
 /vendor
 /vendors
 .env
