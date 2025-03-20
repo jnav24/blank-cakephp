@@ -87,4 +87,12 @@ class DATABASE_CONFIG {
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
+
+    public function __construct()
+    {
+        $this->default['host'] = Configure::read('Database.host');
+        $this->default['login'] = Configure::read('Database.username');
+        $this->default['database'] = Configure::read('Database.name');
+        $this->default['password'] = Configure::read('Database.password');
+    }
 }

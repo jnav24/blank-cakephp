@@ -90,11 +90,17 @@ Cache::config('default', array('engine' => 'File'));
  *
  * ));
  */
+CakePlugin::load('DebugKit');
 
 Configure::write('Dispatcher.filters', array(
 	'AssetDispatcher',
 	'CacheDispatcher'
 ));
+
+Configure::write('Database.host', $_ENV['DB_HOST']);
+Configure::write('Database.name', $_ENV['DB_DATABASE']);
+Configure::write('Database.username', $_ENV['DB_USERNAME']);
+Configure::write('Database.password', $_ENV['DB_PASSWORD']);
 
 /**
  * Configures default file logging options
