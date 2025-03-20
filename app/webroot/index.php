@@ -15,6 +15,10 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
+require '../../vendors/autoload.php';
+
+$dotenv = \Dotenv\Dotenv::createImmutable(__DIR__ . '/../../');
+$dotenv->load();
 
 /**
  * Use the DS to separate the directories in other defines

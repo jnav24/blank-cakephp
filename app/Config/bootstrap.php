@@ -90,10 +90,6 @@ Cache::config('default', array('engine' => 'File'));
  *
  * ));
  */
-require '../../vendors/autoload.php';
-
-$dotenv = \Dotenv\Dotenv::createImmutable(ROOT);
-$dotenv->load();
 
 Configure::write('Dispatcher.filters', array(
 	'AssetDispatcher',
