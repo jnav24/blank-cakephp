@@ -30,4 +30,4 @@ services:
       MYSQL_USER: ${DB_USERNAME}
       MYSQL_PASSWORD: ${DB_PASSWORD}
     volumes:
-      - ~/.docker/data/blank-cakephp/db:/var/lib/mysql
+      - ~/.docker/data/${APP_NAME}/db:/var/lib/mysql
