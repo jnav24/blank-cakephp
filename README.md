@@ -56,7 +56,9 @@ You can view the project in the browser [localhost:8080](http://localhost:8080/)
 To run cake commands
 
 ```shell
- docker exec blank-cakephp-php-1 app/Console/cake bake
+chmod +x app/Console/cake
+docker exec blank-cakephp-php-1 app/Console/cake schema generate
+docker exec blank-cakephp-php-1 app/Console/cake bake
 ```
 
 ### Extras
